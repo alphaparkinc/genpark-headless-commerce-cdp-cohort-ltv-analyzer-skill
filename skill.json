@@ -1,0 +1,38 @@
+{
+  "name": "genpark-headless-commerce-cdp-cohort-ltv-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Headless commerce Customer Data Platform (CDP) and real-time cohort LTV, CAC, and repeat purchase predictive modeling engine.",
+  "author": "genpark",
+  "category": "analytics",
+  "tags": [
+    "commerce-cdp",
+    "cohort-ltv",
+    "cac-payback",
+    "customer-data-platform",
+    "chord"
+  ],
+  "inputs": {
+    "acquisition_channel": {
+      "type": "string"
+    },
+    "cohort_month": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "blended_cac_usd": {
+      "type": "number"
+    },
+    "day_90_ltv_usd": {
+      "type": "number"
+    },
+    "ltv_to_cac_ratio": {
+      "type": "number"
+    },
+    "repeat_purchase_rate_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
